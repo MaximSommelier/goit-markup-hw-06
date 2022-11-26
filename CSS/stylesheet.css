@@ -426,7 +426,8 @@ img {
     position: relative;
     overflow: hidden;
 }
-.portfolio-card:hover .portfolio-card-overlay{
+.portfolio-card:hover .portfolio-card-overlay,
+.portfolio-card:focus .portfolio-card-overlay{
     opacity: 1;
     transform: translateY(0);
 }
@@ -442,7 +443,7 @@ img {
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     transform: translateY(100%);
-    transition: transform var(--timing-function);
+    transition: transform 250ms linear;
 }
 .overlay-text{
     font-family: 'Roboto',sans-serif;
