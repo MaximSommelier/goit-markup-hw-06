@@ -444,7 +444,7 @@ img {
     overflow: auto;
     opacity: 0;
     transform: translateY(100%);
-    transition: transform 250ms linear;
+    transition: transform var(--timing-function);
 }
 .overlay-text{
     font-family: 'Roboto',sans-serif;
