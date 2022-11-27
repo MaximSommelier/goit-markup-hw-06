@@ -737,7 +737,7 @@ letter-spacing: 0.03em;
     border-radius: 4px;
 }
 
-.modal-btn{
+.modal-btn-close{
     display: inline-flex;
     position: absolute;
     width: 30px;
@@ -753,7 +753,7 @@ letter-spacing: 0.03em;
     cursor: pointer;
 }
 
-.modal-icon{
+.modal-icon-close{
     fill: var(--first-color);
 }
 
