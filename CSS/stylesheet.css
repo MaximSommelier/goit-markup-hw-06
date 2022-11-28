@@ -647,7 +647,7 @@ letter-spacing: 0.03em;
     margin-left: 93px;
 }
 
-.subscribe-field{
+.subscribe_form{
     display: flex;
     align-items: center;
     justify-content: center;
