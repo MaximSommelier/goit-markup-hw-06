@@ -442,7 +442,6 @@ img {
     align-items: center;
     background-color: rgba(33, 150, 243, 0.9);
     overflow: auto;
-    opacity: 0;
     transform: translateY(100%);
     transition: transform var(--timing-function);
 }
