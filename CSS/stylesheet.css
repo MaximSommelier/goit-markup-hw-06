@@ -645,7 +645,16 @@ letter-spacing: 0.03em;
 
 .subscribe-footer{
     margin-left: 93px;
+    /* margin-right: 215px; */
 }
+
+/* .subscribe-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 12px;
+} */
 
 .subscribe_form{
     display: flex;
@@ -684,7 +693,7 @@ letter-spacing: 0.03em;
 
 
 /* иконки футер */
-.right-footer
+
 .socials-links-footer{
     display: flex;
     justify-content: center;
