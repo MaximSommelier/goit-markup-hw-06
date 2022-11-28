@@ -644,16 +644,7 @@ letter-spacing: 0.03em;
 
 .subscribe-footer{
     margin-left: 93px;
-    /* margin-right: 215px; */
 }
-
-/* .subscribe-field{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 12px;
-} */
 
 .subscribe_form{
     display: flex;
@@ -661,6 +652,27 @@ letter-spacing: 0.03em;
     justify-content: center;
     margin-top: 20px;
     gap: 12px;
+}
+.subscribe-field{
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.subscribe-field::placeholder{
+    margin-top: 15px;
+    margin-right: 295px;
+    margin-bottom: 15px;
+    margin-left: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
 }
 
 .subscribe-button{
