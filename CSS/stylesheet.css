@@ -814,6 +814,8 @@ letter-spacing: 0.03em;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding-left: 42px;
+    padding-right: 42px;
 }
 
 .modal-form-message{
@@ -836,7 +838,10 @@ letter-spacing: 0.03em;
 }
 
 .modal-icon{
-    
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
 }
 
 .modal-form-checkbox{
