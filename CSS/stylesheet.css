@@ -862,7 +862,7 @@ letter-spacing: 0.03em;
     transform: translateY(-50%);
     transition: fill var(--timing-function);
 }
-.modal-form-field:focus .modal-icon{
+.modal-form-field:focus +.modal-icon{
     fill: var(--second-color);
 }
 
