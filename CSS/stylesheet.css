@@ -779,6 +779,10 @@ letter-spacing: 0.03em;
 .modal-icon-close{
     fill: var(--first-color);
 }
+.modal-icon-close:focus,
+.modal-icon-close:hover{
+    fill: var(--second-color);
+}
 
 .modal-label{
     display: block;
@@ -816,9 +820,11 @@ letter-spacing: 0.03em;
     border-radius: 4px;
     padding-left: 42px;
     padding-right: 42px;
+    outline: 1px solid transparent;
+    transition: outline var(--timing-function), box-shadow var(--timing-function);
 }
 .modal-form-field:focus{
-    outline: 1px solid var(--second-color);
+    outline-color: 1px solid var(--second-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -832,7 +838,6 @@ letter-spacing: 0.03em;
     resize: none;
 }
 .modal-form-message::placeholder{
-    /* padding: 12px 16px; */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -840,6 +845,9 @@ letter-spacing: 0.03em;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+.modal-form-message:focus{
+    outline: 1px solid var(--second-color);
 }
 
 .modal-icon{
