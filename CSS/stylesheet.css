@@ -831,6 +831,7 @@ letter-spacing: 0.03em;
 }
 
 .modal-form-message{
+    display: block;
     margin-bottom: 20px;
     padding: 12px 16px;
     width: 100%;
