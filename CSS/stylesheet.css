@@ -895,6 +895,10 @@ letter-spacing: 0.03em;
     height: 15px;
     border: 1px solid rgba(33, 33, 33, 1);
 }
+.modal-form-checkbox:checked{
+    border-color: var(--second-color);
+    background-color: var(--second-color);
+}
 
 .modal-form-agreement-link{
     color: var(--second-color);
@@ -919,6 +923,14 @@ letter-spacing: 0.03em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color var(--timing-function),
+    box-shadow var(--timing-function);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+    background-color: rgba(24, 140, 232, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
