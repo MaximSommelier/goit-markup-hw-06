@@ -783,7 +783,9 @@ letter-spacing: 0.03em;
 .modal-icon-close:hover{
     fill: var(--second-color);
 }
-
+.modal-form-group{
+    margin-bottom: 20px;
+}
 .modal-label{
     display: block;
     margin-bottom: 12px;
@@ -867,14 +869,36 @@ letter-spacing: 0.03em;
     fill: var(--second-color);
 }
 
+.modal-form-agreement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--little-color);
+}
+.modal-form-agreement-desc{}
 .modal-form-checkbox{
-    
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    border: 1px solid rgba(33, 33, 33, 1);
 }
 
+.modal-form-agreement-link{
+    color: var(--second-color);
+}
 .modal-form-btn{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     padding: 10px, 52px;
     min-width: 200px;
     min-height: 50px;
