@@ -431,6 +431,11 @@ img {
     opacity: 1;
     transform: translateY(0);
 }
+
+.portfolio-card{
+    transition: box-shadow var(--timing-function);
+}
+
 .portfolio-card-overlay{
     position: absolute;
     top: 0;
@@ -825,13 +830,12 @@ letter-spacing: 0.03em;
     padding-right: 42px;
     outline: 1px solid transparent;
     outline-offset: -1px;
-    transition: outline var(--timing-function), box-shadow var(--timing-function);
+    transition: outline var(--timing-function);
 }
 
 .modal-form-field:focus{
     outline: 1px solid var(--second-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+    }
 
 .modal-form-message{
     display: block;
@@ -885,6 +889,7 @@ letter-spacing: 0.03em;
     color: var(--little-color);
 }
 .modal-form-agreement-desc{}
+
 .modal-form-checkbox{
     appearance: none;
     width: 16px;
