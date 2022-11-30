@@ -900,8 +900,12 @@ letter-spacing: 0.03em;
     background-color: var(--second-color);
 }
 
+.modal-form-agreement-desc{
+    user-select: none;
+}
 .modal-form-agreement-link{
     color: var(--second-color);
+    text-underline-offset: 3px;
 }
 .modal-form-btn{
     display: flex;
