@@ -553,7 +553,7 @@ img {
     transition: color var(--timing-function);
     transition: background-color var(--timing-function);
     transition: box-shadow var(--timing-function);
-}
+    }
 
 .button:active{
     color: var(--third-color);
