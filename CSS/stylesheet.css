@@ -1,6 +1,6 @@
 
 :root{
-    /* DEFOLT */
+    /*===== DEFOLT===== */
     --main-color: #212121; 
     --main-bg-color: #F5F5F5;
     --bg-color-team: #F5F4FA;
@@ -20,7 +20,8 @@
     --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-/* Start Reset/ */
+/* =====Start Reset===== */
+
 h1,
 h2,
 h3,
@@ -36,7 +37,7 @@ img {display: block;
 }
 /* End reset  */
 
- /* STYLES */
+ /* ====STYLES==== */
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -62,8 +63,7 @@ img {
     max-width: 100%;
 }
 
-
-/* HEADER */
+/* ======HEADER===== */
 
 .header-portfolio{
     border-bottom: 1px solid var(--portfolio-border);
@@ -106,7 +106,8 @@ img {
     padding-bottom: 32px;
 }
 
-/* анімація хедер */
+/* =====HEADER ANIMATION====== */
+
 .header-link::after{
     content:'';
     position: absolute;
@@ -170,14 +171,14 @@ img {
     color: var(--first-color);
     letter-spacing: 0.03em;
 }
-/* Иконки хедера */
+/* ====HEADER ICONS===== */
 .header-icon{
     fill: currentColor;
 }
 
-/* main-section */
+/* =====MAIN SECTION===== */
 
-.main-section{
+.hero{
     max-width: 1600px;
     height: 600px;
     margin: 0 auto;
@@ -192,7 +193,7 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-.main-title{
+.hero__title{
     display: block;
     margin: auto;
     padding-bottom: 30px;
@@ -205,14 +206,16 @@ img {
     line-height: 1.36;
     letter-spacing: 0.06em;
 }
- /* Кнопка Замовити послугу  */
- .main-button{
+ /* =====MAIN BUTTON======  */
+
+ .hero-button{
     display: block;
     margin: 0 auto;
     color: var(--third-color);
     background-color: var(--second-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     cursor: pointer;
     font-family: inherit;
     font-weight: 700;
@@ -225,20 +228,21 @@ img {
     transition: background-color var(--timing-function);
 }
 
-.main-button:hover{
+.hero-button:hover{
     background-color: var(--main-button-background);
 }
-.main-button:focus{
+.hero-button:focus{
     background-color:var(--main-button-background);
 }
 
-/*особливості special */
-.list-special{
+/*=====SPECIALS===== */
+
+.special__list{
     display: flex;
     gap: 30px;
 }
 
-.second-title{
+.special__title{
     padding-top: 10px;
     width: 270px;
     color: var(--main-color);
@@ -248,7 +252,7 @@ img {
     text-transform: uppercase;
 }
 
-.text-1{
+.special__text{
     margin-top: 10px;
     color:var(--little-color);
     width: 270px;
@@ -256,7 +260,7 @@ img {
     font-size: 14px;
     line-height: 1.71;
 }
-.special-icon{
+.special__icon{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,24 +270,28 @@ img {
     border-radius: 4px;
     background-color: var(--bg-color-team);
 }
-/* чим займаємося */
-.list-about{
+
+/* =====ABOUT===== */
+
+.about-section{
+    padding-top: 0px;}
+
+.about__title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-list{
     display: flex;
     flex-wrap: wrap;
     gap: var(--indent);
 }
-.title-about{
-    text-align: center;
-    margin-bottom: 50px;
-}
-.section-about{
-    padding-top: 0px;
-}
-.about-card{
+
+.about-list__card{
     position: relative;
 }
 
-.about-info{
+.about-list__info{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -292,7 +300,7 @@ img {
     background: rgba(47, 48, 58, 0.8);
 }
 
-.about-item-title{
+.about-list__title{
     text-align: center;
     color: var(--third-color);
     font-weight: 700;
@@ -300,7 +308,7 @@ img {
     line-height: 1.14;
     text-transform: uppercase; 
 }
-/* команда */
+/* =====TEAM====== */
 
 .section-team{
     background-color: var(--bg-color-team);
@@ -340,7 +348,7 @@ img {
     line-height: 1.18;
     margin-bottom: 16px;
 }
-/* Иконки Команды */
+/* =====TEAM ICONS====== */
 .socials{
     display: flex;
     justify-content: center;
@@ -373,7 +381,9 @@ img {
 .socials-links:hover .socials-icon{
     fill: var(--third-color);
 }
-  /* Наші клієнти */
+
+  /* ======OUR CLIENTS===== */
+
 .clients{
     display: flex;
     justify-content: center;
@@ -408,19 +418,61 @@ img {
     fill: var(--second-color);
 }
 
-/* Portfolio */
+/* =====PORTFOLIO===== */
+
 .portfolio{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     flex-basis: calc(100% / 3 - 30px);
 }
+/* ======PORTFOLIO BUTTONS=====*/
 
+.portfolio-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+ }
+ 
+ .portfolio-btn__item:not(:last-child){
+     margin-right: 8px;
+ }
+ 
+ .portfolio-button{
+     padding: 6px 25px;
+     color: var(--main-color);
+     border-radius: 4px;
+     border: none;
+     cursor: pointer;
+     font-family: inherit;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.62;
+     letter-spacing: 0.06em;
+     transition: color var(--timing-function),
+      background-color var(--timing-function),
+      box-shadow var(--timing-function);
+ }
+ .portfolio-button:active{
+     color: var(--third-color);
+     background-color: var(--main-button-background);
+ }
+ 
+ .portfolio-button:hover,
+ .portfolio-button:focus{
+     color: var(--third-color);
+     background-color: var(--main-button-background);
+     box-shadow: 
+     0px 3px 1px rgba(0, 0, 0, 0.1),
+     0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
+ }
 .portfolio-card:hover{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* Портфоліо -анімація */
+/* =====PORTFOLIO ANIMATION===== */
 
 .portfolio-thumb{
     position: relative;
@@ -495,83 +547,8 @@ img {
     display: none;
 }
 
-/* Кнопки Портфоліо */
-.btn-portfolio{
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   margin-bottom: 50px;
-}
+/* =====FOOTER===== */
 
-.btn-item:not(:last-child){
-    margin-right: 8px;
-}
-
-/* Кнопка Усі */
-.button1{
-    padding: 6px 25px;
-    color: var(--main-color);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    transition: color var(--timing-function);
-    transition: background-color var(--timing-function);
-    transition: box-shadow var(--timing-function);
-}
-.button1:active{
-    color: var(--third-color);
-    background-color: var(--main-button-background);
-}
-
-.button1:hover,
-.button1:focus{
-    color: var(--third-color);
-    background-color: var(--main-button-background);
-    box-shadow: 
-    0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-/* Інші кнопки */
-.button{
-    padding: 6px 22px;
-    color: var(--main-color);
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    transition: color var(--timing-function);
-    transition: background-color var(--timing-function);
-    transition: box-shadow var(--timing-function);
-    }
-
-.button:active{
-    color: var(--third-color);
-    background-color: var(--main-button-background);
-}
-
-.button:hover,
-.button:focus{
-    color: var(--third-color);
-    background-color: var(--main-button-background);
-    box-shadow:
-    0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-
-/* FOOTER */
 .footer{
     background: var(--just-color);
     text-decoration: none;
@@ -649,7 +626,9 @@ letter-spacing: 0.03em;
     line-height: 1.14;
     text-transform: uppercase;
 }
-/* иконки футер */
+
+/* =====fOOTER ICONS===== */
+
 .right-footer{
     margin-left: auto;
 }
@@ -671,7 +650,7 @@ letter-spacing: 0.03em;
 .socials-links-footer:hover{
     background-color: var(--second-color);
 }
-/* Підписка футер */
+/* =====FOOTER SUBSCRIBE===== */
 
 .subscribe-footer{
     margin-left: 93px;
@@ -735,7 +714,7 @@ letter-spacing: 0.03em;
     margin-left: 10px;
 }
 
-/* МОДАЛЬНЕ ВІКНО */
+/* ======MODAL WINDOW======*/
 
 .backdrop{
     position: fixed;
@@ -948,7 +927,7 @@ letter-spacing: 0.03em;
 }
 
 
-/* АНІМАЦІЯ МОДАЛКИ */
+/* =====MODAL ANIMATION======== */
 
 @keyframes scale-in-center {
     0% {
